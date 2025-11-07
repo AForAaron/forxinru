@@ -126,7 +126,7 @@ function startPopups() {
     
     // 开始创建弹窗（每100ms一个，可以调整这个数字来改变速度）
     // 数字越大，弹窗越慢；数字越小，弹窗越快
-    const popupInterval = 100; // 默认100ms，你可以改成50、200、500等
+    const popupInterval = 80; // 默认100ms，你可以改成50、200、500等
     createInterval = setInterval(() => {
         const popup = createPopup();
         popups.push(popup);
