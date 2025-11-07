@@ -16,7 +16,7 @@ const TIPS = [
     '欣茹，别熬夜',
     '欣茹，今天过得开心嘛',
     '欣茹，天冷了，多穿衣服',
-    '我的欣茹，要照顾好自己',
+    '欣茹，要照顾好自己',
     '欣茹，你笑起来最好看',
     '欣茹，记得按时吃饭',
     '欣茹，累了就休息一下',
@@ -161,16 +161,16 @@ function startPopups() {
         popups.push(popup);
     }, popupInterval);
     
-    // 30秒后停止创建新弹窗
+    // 50秒后停止创建新弹窗
     stopTimeout = setTimeout(() => {
         clearInterval(createInterval);
-        updateStatus('已停止创建新弹窗，30秒后关闭所有弹窗...');
+        updateStatus('已停止创建新弹窗，10秒后关闭所有弹窗...');
         
-        // 再等30秒后关闭所有弹窗
+        // 再等10秒后关闭所有弹窗
         closeTimeout = setTimeout(() => {
             closeAllPopups();
-        }, 30000);
-    }, 30000);
+        }, 10000);
+    }, 50000);
 }
 
 function closeAllPopups() {
